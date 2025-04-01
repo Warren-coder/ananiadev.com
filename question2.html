@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+</head>
+<body>
+    <style>
+        body{
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+        }
+        #contenor{
+            border: green solid 2px;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            width: 400px;
+            padding:40px;
+        }
+        #question{
+            background-color: white;
+            color: black;
+            border-radius: 3px;
+            font-size: 17px;
+            padding: 10px 0 10px 0;
+        }
+        .answer{
+            display:flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .false, .true{
+            background-color: white;
+            color: black;
+            margin-right: 10px;
+            padding:3px 10px 3px 10px;
+            border-radius: 10px;
+        }
+        .submit-btn{
+            display: flex;
+            justify-content: right;
+        }
+        .sub{
+            border: white 2px solid;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        #sub2{
+            border: white 2px solid;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            margin-right: 5px;
+            display: none;
+            cursor: pointer;
+        }
+        .sub:active,#sub2:active{
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        input{
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <div id="contenor">
+      <div class="title">
+        <h1>QUIZ</h1>
+        <h2>Question:02</h2>
+      </div>
+      <div id="question">
+        <p id="qz">Javascript used in backed and frontend?</p>
+      </div>
+      <div class="answer">
+        <input type="radio" name="a" id="true">
+        <div class="true">
+            <label for="true">true</label>
+        </div>
+        
+        <input type="radio" name="a" id="false">
+       <div class="false">
+        <label for="false">false</label>
+       </div>
+      </div>
+
+      <div class="submit-btn">
+        <input class="sub" type="submit" name="" id="btn">
+        <a href="question1.html"><button title="BACK" class="sub">↩ Back</button></a>
+        <a href="question3.html"><button id="sub2">↪ Next</button></a>
+      </div>
+
+      <div class="see-answer">
+        <p id="answer"></p>
+      </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
